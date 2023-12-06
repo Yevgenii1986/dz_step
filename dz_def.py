@@ -56,3 +56,13 @@ def filter_even(*args: int) -> list[int]:
 
 result = filter_even(1, 2, 3, 5, 6, 8, 9, 3, 5, 76, 4)
 print(result)
+
+my_string = input("input string")
+
+
+def palindrome(string: str) -> bool:
+    return string == string[::-1]
+
+
+result = palindrome(my_string)
+print(result)
