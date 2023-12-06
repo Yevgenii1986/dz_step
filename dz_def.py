@@ -44,3 +44,15 @@ def filter_even(number):
 
 result = filter_even(my_list_2)
 print(result)
+
+
+def filter_even(*args: int) -> list[int]:
+    res = []
+    for i in args:
+        if not i % 2:
+            res.append(i)
+    return res
+
+
+result = filter_even(1, 2, 3, 5, 6, 8, 9, 3, 5, 76, 4)
+print(result)
