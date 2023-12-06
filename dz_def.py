@@ -66,3 +66,15 @@ def palindrome(string: str) -> bool:
 
 result = palindrome(my_string)
 print(result)
+numbers = [2, 3, 5]
+
+
+def modify_list(n: list[int]) -> list[int]:
+    square = []
+    for i in n:
+        square.append(i ** 2)
+    return square
+
+
+result = modify_list(numbers)
+print(result)
