@@ -17,6 +17,7 @@ def calculate_average(nam):
 result = calculate_average(my_list)
 print(result)
 
+
 def factorial(x, y):
     a = [i for i in range(1, x + 1)]
     b = [i for i in range(1, y + 1)]
@@ -31,4 +32,15 @@ def factorial(x, y):
 
 
 result = factorial(3, 4)
+print(result)
+
+my_list_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+def filter_even(number):
+    res = [i for i in number if not i % 2]
+    return res
+
+
+result = filter_even(my_list_2)
 print(result)
