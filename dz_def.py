@@ -16,3 +16,19 @@ def calculate_average(nam):
 
 result = calculate_average(my_list)
 print(result)
+
+def factorial(x, y):
+    a = [i for i in range(1, x + 1)]
+    b = [i for i in range(1, y + 1)]
+    sum_one = 1
+    sum_two = 1
+    for i in a:
+        sum_one *= i
+    for i in b:
+        sum_two *= i
+
+    return sum_one, sum_two
+
+
+result = factorial(3, 4)
+print(result)
