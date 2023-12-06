@@ -78,3 +78,17 @@ def modify_list(n: list[int]) -> list[int]:
 
 result = modify_list(numbers)
 print(result)
+
+
+def fibonacci(n):
+    fbn1 = fbn2 = 1
+
+    i = 0
+    while i < n - 2:
+        fbn1, fbn2 = fbn2, fbn1 + fbn2
+        i = i + 1
+    return fbn2
+
+
+result = fibonacci(10)
+print(result)
